@@ -1,0 +1,48 @@
+﻿@model Prog5_3C2025.Models.Producto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PRD_NOMBRE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PRD_NOMBRE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PRD_IMG)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PRD_IMG)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PRD_DESCRIPCION)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PRD_DESCRIPCION)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PRD_CANTIDAD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PRD_CANTIDAD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PRD_PRECIO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PRD_PRECIO)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.PRD_ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
